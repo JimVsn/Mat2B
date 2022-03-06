@@ -1,0 +1,11 @@
+.line__persent-exel {
+  width: 50%;
+  border: 1px white solid;
+  border-bottom: none;
+  border-right: none;
+  border-top: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

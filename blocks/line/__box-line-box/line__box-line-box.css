@@ -1,0 +1,12 @@
+.line__box-line-box {
+  display: flex;
+  width: 29.58%;
+  justify-content: space-between;
+  
+}
+
+@media screen and (max-width: 450px) {
+  .line__box-line-box {
+    width: 35%;
+  }
+}

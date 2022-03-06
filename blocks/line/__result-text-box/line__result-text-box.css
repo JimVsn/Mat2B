@@ -1,0 +1,30 @@
+.line__result-text-box {
+  width: 200px;
+  height: 58px;
+  border: 1px white solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0 0;
+}
+
+@media screen and (max-width: 450px) {
+  .line__result-text-box {
+    width: 150px;
+    height: 58px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .line__result-text-box {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .line__result-text-box {
+    width: 120px;
+    height: 58px;
+  }
+}

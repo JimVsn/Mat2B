@@ -1,0 +1,16 @@
+.line__result-goalscore {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  line-height: 43px;
+  font-weight: 900;
+  margin: 0;
+  color: white;
+}
+
+/* @media screen and (max-width: 450px) {
+  .line__result-goalscore {
+    font-size: 70px;
+    line-height: 73px;
+  }
+} */

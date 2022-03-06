@@ -1,0 +1,6 @@
+.line__result-box-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,22 @@
+.line__logo-result {
+  width: 80%;
+  margin-top: 15px;
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 650px) {
+  .line__logo-result {
+    display: none;
+  }
+}
+@media screen and (max-width: 650px) {
+  .line__logo-result{
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .line__logo-result{
+    width: 100%;
+  }
+}

@@ -1,0 +1,15 @@
+.line__persent-container_mod {
+  width: 100%;
+  display: none;
+  margin-top: 20px;
+  justify-content: space-around;
+  /* border: 1px red solid; */
+}
+
+@media screen and (max-width: 450px) {
+  .line__persent-container_mod {
+    max-width: 310px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

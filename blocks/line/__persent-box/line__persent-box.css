@@ -1,0 +1,12 @@
+.line__persent-box {
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px white solid;
+}
+
+@media screen and (max-width: 450px) {
+  .line__persent-box {
+    width: 100%;
+  }
+}

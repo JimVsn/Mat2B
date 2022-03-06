@@ -1,0 +1,18 @@
+.line__box-line-text {
+  margin: 10px 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+  color: white;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 700px) {
+  .line__box-line-text {
+    font-size: 15px;
+    line-height: 16px;
+  }
+}

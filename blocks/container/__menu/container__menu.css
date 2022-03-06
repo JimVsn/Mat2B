@@ -1,0 +1,22 @@
+.container__menu {
+  /* border: 2px blue solid; */
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 269px;
+  border: 1px white solid;
+}
+
+@media screen and (max-width: 450px) {
+  .container__menu {
+    height: 120px;
+    
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container__menu {
+    display: none;
+  }
+}

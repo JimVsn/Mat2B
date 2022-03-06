@@ -1,0 +1,12 @@
+.line__teamVs {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media screen and (max-width: 650px) {
+  .line__teamVs {
+    display: none;
+  }
+}

@@ -1,0 +1,6 @@
+.line__box-line-title {
+  width: 99.5%;
+  display: flex;
+  border: 1px white solid;
+  border-bottom: none;
+}

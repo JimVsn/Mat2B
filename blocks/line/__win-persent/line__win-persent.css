@@ -1,0 +1,23 @@
+.line__win-persent {
+  font-family: 'Arial Narrow Bold', sans-serif;
+  font-size: 40px;
+  line-height: 43px;
+  font-weight: 900;
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+
+@media screen and (max-width: 700px) {
+  .line__win-persent {
+    font-size: 30px;
+    line-height: 33px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .line__win-persent {
+    font-size: 20px;
+    line-height: 23px;
+  }
+}

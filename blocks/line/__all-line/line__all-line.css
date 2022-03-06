@@ -1,0 +1,16 @@
+.line__all-line {
+  color: rgb(112, 186, 255);
+  border-bottom: 1px rgb(112, 186, 255) solid;
+}
+
+@media screen and (max-width: 700px) {
+  .line__all-line {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .line__all-line {
+    display: none;
+  }
+}

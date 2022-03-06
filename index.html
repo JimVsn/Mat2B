@@ -1,0 +1,2254 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <!-- Google Tag Manager --> 
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': 
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], 
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); 
+	})(window,document,'script','dataLayer','GTM-T86MBPM');</script> 
+	<!-- End Google Tag Manager -->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Math2Beth</title>
+      <link href="../NewMath2Beth/images/Favicon.png" rel="icon">
+      <link rel="stylesheet" href="pages/index.css">
+  </head>
+
+
+<body class="body">
+  <!-- Google Tag Manager (noscript) --> 
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T86MBPM" 
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> 
+	<!-- End Google Tag Manager (noscript) -->
+  <div class="page">
+    <main class="content">
+    <header class="header">   
+        <h1 class="header__title">Math2<span class="header__title-span">Bet</span></h1>
+        <h2 class="header__text">Математический расчет исходов на футбол</h2>
+    </header>
+
+    <form name="formMath" class="container">
+      <div class="container__left-section">
+        <h2 class="container__title">HOME</h2>
+        <div class="container__left-box">
+          <nav class="container__menu" id="menu">
+            <a class="container__nav-link" href="#">Главная</a>
+            <a class="container__nav-link" href="#">Статьи</a>
+            <a class="container__nav-link" href="#">Math2Beth</a>
+            <a class="container__nav-link" href="#">Прогнозы</a>
+            <a class="container__nav-link" href="#">F.A.Q</a>
+          </nav>
+          <div class="container__left-choise">
+
+            <p class="container__choise-title">*Выберите Лигу</p>
+            <select name="selectLeague" id="selectvalue" class="container__choise-input container__choise-input_select leagueHome">
+              <option selected value="0">Выберите</option>
+              <optgroup label="Англия">
+                <option value="1">АПЛ</option>
+                <option value="2">Чемпионшип</option>
+              </optgroup>
+              <optgroup label="Германия">
+                <option value="3">Бундеслига</option>
+                <option value="4">2-я Бундеслига</option>
+              </optgroup>
+              <optgroup label="Испания">
+                <option value="5">Ла Лига</option>
+                <option value="6">2-я Ла Лига</option>
+              </optgroup>
+              <optgroup label="Италия">
+                <option value="7">Серия А</option>
+                <option value="8">Серия В</option>
+              </optgroup>           
+              <optgroup label="Франция">
+                <option value="9">Лига 1</option>
+                <option value="10">Лига 2</option>
+              </optgroup>
+              <optgroup label="Португалия">
+                <option value="11">Примейра</option>
+              </optgroup>
+              </select>
+            
+            <p class="container__choise-title container__choise-title_modnone-apl">*Выберите команду хозяев</p>
+            <select id="selectvalue" name="selectNameHome" class="container__choise-input container__choise-input_select container__selectNameHome">
+            <option selected value="0">Выберите</option>
+            <option value="511000000" class="Arsenal">Арсенал</option>
+            <option value="426500000">Астон Вилла</option>
+            <option value="145000000">Бёрнли</option>
+            <option value="239900000">Брайтон</option>
+            <option value="218900000">Брентфорд</option>
+            <option value="350750000">Вест Хэм</option>
+            <option value="338500000">Вулверхэмптон</option>
+            <option value="239950000">Кристалл Пэлас</option>
+            <option value="513800000">Лестер</option>
+            <option value="889000000" class="Liverpool">Ливерпуль</option>
+            <option value="265000000">Лидс</option>
+            <option value="991300000">Ман Сити</option>
+            <option value="790250000">Ман Юнайтед</option>
+            <option value="155550000">Норвич</option>
+            <option value="278400000">Ньюкасл</option>
+            <option value="246750000">Саутгемптон</option>
+            <option value="580250000">Тоттенхэм</option>
+            <option value="143600000">Уотфорд</option>
+            <option value="883000000">Челси</option>
+            <option value="463750000">Эвертон</option>
+            </select>
+           
+            <p class="container__choise-title container__choise-title_modnone_cship">*Выберите команду хозяев</p>
+            <select id="selectvalue" name="selectNameChip" class="container__choise-input container__choise-input_select container__selectName_Cship">
+              <option selected value="0">Выберите</option>
+              <option value="28550000">Барнсли</option>
+              <option value="36300000">Бирмингем</option>
+              <option value="47800000">Блэкберн</option>
+              <option value="13050000">Блэкпул</option>
+              <option value="169600000">Борнмут</option>
+              <option value="33900000">Бристоль</option>
+              <option value="86550000">Вест Бромвич</option>
+              <option value="33600000">Дерби Каунти</option>
+              <option value="31600000">Кардифф</option>
+              <option value="19900000">Ковентри</option>
+              <option value="38950000">Куинз Парк Р.</option>
+              <option value="20200000">Лутон Таун</option>
+              <option value="54400000">Мидлсбро</option>
+              <option value="39600000">Миллуолл</option>
+              <option value="58200000">Ноттингем Форест</option>
+              <option value="11550000">Питерборо</option>
+              <option value="34830000">Престон</option>
+              <option value="37100000">Рединг</option>
+              <option value="58600000">Сток Сити</option>
+              <option value="38950000">Суонси</option>
+              <option value="147000000">Фулхэм</option>
+              <option value="37650000">Хаддерсфилд</option>
+              <option value="21200000">Халл Сити</option>
+              <option value="94100000">Шеффилд Юнайтед</option>
+              </select>
+
+              <p class="container__choise-title container__choise-title_modnone-bundesliga">*Выберите команду хозяев</p>
+            <select id="selectvalue" name="selectNameHomeBundesliga" class="container__choise-input container__choise-input_select container__selectNameHome-Bundesliga">
+            <option selected value="0">Выберите</option>
+            <option value="199800000">Айнтрахт</option>
+            <option value="55750000">Арминия</option>
+            <option value="98800000">Аугсбург</option>
+            <option value="815750000">Бавария Мюнхен</option>
+            <option value="417450000">Байер 04</option>
+            <option value="576300000">Боруссия Дортмунд</option>
+            <option value="237300000">Боруссия Мёнхенг.</option>
+            <option value="41850000">Бохум</option>
+            <option value="18530000">Вольфсбург</option>
+            <option value="106430000">Герта Берлин</option>
+            <option value="29800000">Гройтер Фюрт</option>
+            <option value="75510000">Кёльн</option>
+            <option value="122050000">Майнц 05</option>
+            <option value="454000000">РБ Лейпциг</option>
+            <option value="71600000">Унион Берлин</option>
+            <option value="146750000">Фрайбург</option>
+            <option value="197450000">Хоффенхайм</option>
+            <option value="182100000">Штутгарт</option>
+            </select>
+
+            <p class="container__choise-title container__choise-title_modnone-bundesligaTwo">*Выберите команду хозяев</p>
+            <select id="selectvalue" name="selectNameHomeBundesligaTwo" class="container__choise-input container__choise-input_select container__selectNameHome-BundesligaTwo">
+            <option selected value="0">Выберите</option>
+            <option value="39350000">Вердер</option>
+            <option value="36550000">Гамбург</option>
+            <option value="13100000">Ганза Росток</option>
+            <option value="20880000">Ганновер 96</option>
+            <option value="17080000">Дармштадт 98</option>
+            <option value="13930000">Динамо Дрезден</option>
+            <option value="13480000">Зандхаузен</option>
+            <option value="12850000">Ингольштадт</option>
+            <option value="15030000">Карлсруэ</option>
+            <option value="25480000">Нюрнберг</option>
+            <option value="17200000">Падеборн 07</option>
+            <option value="25100000">Санкт-Паули</option>
+            <option value="25500000">Фортуна Дюсс.</option>
+            <option value="17700000">Хайденхайм</option>
+            <option value="16200000">Хольштайн Киль</option>
+            <option value="32750000">Шальке 04</option>
+            <option value="11080000">Эрцгебирге Ауэ</option>
+            <option value="16880000">Ян Регенсбург</option>
+            </select>
+
+            <p class="container__choise-title container__choise-title_modnone-LaLiga">*Выберите команду хозяев</p>
+            <select id="selectvalue" name="selectNameHomeLaLiga" class="container__choise-input container__choise-input_select container__selectNameHome-LaLiga">
+            <option selected value="0">Выберите</option>
+            <option value="190600000">Атлетик Бильбао</option>
+            <option value="66700000">Алавес</option>
+            <option value="646500000">Атлетико Мадрид</option>
+            <option value="650500000">Барселона</option>
+            <option value="230100000">Бетис</option>
+            <option value="298300000">Валенсия</option>
+            <option value="367000000">Вильяреал</option>
+            <option value="86000000">Гранада</option>           
+            <option value="62150000">Кадис</option>
+            <option value="82200000">Леванте</option>
+            <option value="74500000">Мальорка</option>
+            <option value="87600000">Осасуна</option>
+            <option value="57300000">Райо Вальекано</option>
+            <option value="780000000">Реал Мадрид</option>
+            <option value="395000000">Реал Сосьедад</option>
+            <option value="424900000">Севилья</option>
+            <option value="124700000">Сельта</option>
+            <option value="150300000">Хетафе</option>
+            <option value="48500000">Эльче</option>
+            <option value="112500000">Эспаньол</option>
+            </select>
+
+            <p class="container__choise-title container__choise-title_modnone-LaLigaTwo">*Выберите команду хозяев</p>
+            <select id="selectvalue" name="selectNameHomeLaLigaTwo" class="container__choise-input container__choise-input_select container__selectNameHome-LaLigaTwo">
+            <option selected value="0">Выберите</option>
+            <option value="6800000">Алькорон</option>
+            <option value="57400000">Альмерия</option>
+            <option value="10250000">Аморебьета</option>
+            <option value="8000000">Бургос</option>
+            <option value="27900000">Жирона</option>
+            <option value="11200000">Ибица</option>
+            <option value="12500000">Картахена</option>
+            <option value="23000000">Лас-Пальмас</option>           
+            <option value="36500000">Леганес</option>
+            <option value="7400000">Луго</option>
+            <option value="23300000">Малага</option>
+            <option value="19000000">Мирандес</option>
+            <option value="14500000">Понферрадина</option>
+            <option value="46800000">Реал Вальядолид</option>
+            <option value="18800000">Реал Овьедо</option>
+            <option value="25000000">Сарагоса</option>
+            <option value="30750000">Реал Сосьедад Б</option>
+            <option value="28350000">Спортинг Хихон</option>
+            <option value="18900000">Тенерифе</option>
+            <option value="29600000">Уэска</option>
+            <option value="14700000">Фуэнлабрада</option>
+            <option value="29800000">Эйбар</option>           
+            </select>
+
+            <p class="container__choise-title container__choise-title_modnone-SeriaA">*Выберите команду хозяев</p>
+            <select id="selectvalue" name="selectNameHomeSeriaA" class="container__choise-input container__choise-input_select container__selectNameHome-SeriaA">
+            <option selected value="0">Выберите</option>
+            <option value="379900000">Аталанта</option>
+            <option value="142750000">Болонья</option>
+            <option value="87980000">Венеция</option>
+            <option value="108200000">Дженоа</option>
+            <option value="550900000">Интер Милан</option>
+            <option value="129500000">Кальяри</option>
+            <option value="267450000">Лацио</option>
+            <option value="466600000">Милан</option>           
+            <option value="505850000">Наполи</option>
+            <option value="390650000">Рома</option>
+            <option value="55850000">Салернитана</option>
+            <option value="103300000">Сампдория</option>
+            <option value="205600000">Сассуоло</option>
+            <option value="70000000">Специя</option>
+            <option value="205680000">Торино</option>
+            <option value="103250000">Удинезе</option>
+            <option value="232400000">Фиорентина</option>
+            <option value="116530000">Верона</option>
+            <option value="86600000">Эмполи</option>
+            <option value="566400000">Ювентус</option>        
+            </select>
+
+            <p class="container__choise-title container__choise-title_modnone-SeriaB">*Выберите команду хозяев</p>
+            <select id="selectvalue" name="selectNameHomeSeriaB" class="container__choise-input container__choise-input_select container__selectNameHome-SeriaB">
+            <option selected value="0">Выберите</option>
+            <option value="10400000">Алессандрия</option>
+            <option value="12550000">Асколи</option>
+            <option value="29980000">Беневенто</option>
+            <option value="36000000">Брешиа</option>
+            <option value="16130000">Виченца</option>
+            <option value="17580000">Козенца</option>
+            <option value="16380000">Комо</option>
+            <option value="24880000">Кремонезе</option>           
+            <option value="20930000">Кротоне</option>
+            <option value="32900000">Лечче</option>
+            <option value="44650000">Монца</option>
+            <option value="57550000">Парма</option>
+            <option value="13800000">Перуджа</option>
+            <option value="33000000">Пиза</option>
+            <option value="8650000">Порденеоне</option>
+            <option value="15500000">Реджина</option>
+            <option value="26430000">СПАЛ</option>
+            <option value="15480000">Тернана</option>
+            <option value="18830000">Фрозиноне</option>
+            <option value="12480000">Читаделла</option>        
+            </select>
+
+            <p class="container__choise-title container__choise-title_modnone-League1">*Выберите команду хозяев</p>
+            <select id="selectvalue" name="selectNameHomeLeague1" class="container__choise-input container__choise-input_select container__selectNameHome-League1">
+            <option selected value="0">Выберите</option>
+            <option value="61050000">Анже</option>
+            <option value="87850000">Бордо</option>
+            <option value="76850000">Брест</option>
+            <option value="42650000">Клермон</option>
+            <option value="113700000">Ланс</option>
+            <option value="239300000">Лилль</option>
+            <option value="316050000">Лион</option>
+            <option value="52800000">Лорьян</option>           
+            <option value="250350000">Марсель</option>
+            <option value="88200000">Метц</option>
+            <option value="352200000">Монако</option>
+            <option value="98550000">Монпелье</option>
+            <option value="89500000">Нант</option>
+            <option value="237950000">Ницца</option>
+            <option value="909550000">ПСЖ</option>
+            <option value="216900000">Ренн</option>
+            <option value="106900000">Сент-Этьен</option>
+            <option value="99000000">Реймс</option>
+            <option value="95400000">Страсбург</option>
+            <option value="58750000">Труа</option>        
+            </select>
+
+            <p class="container__choise-title container__choise-title_modnone-League2">*Выберите команду хозяев</p>
+            <select id="selectvalue" name="selectNameHomeLeague2" class="container__choise-input container__choise-input_select container__selectNameHome-League2">
+            <option selected value="0">Выберите</option>
+            <option value="23300000">Амьен</option>
+            <option value="17550000">Аяччо</option>
+            <option value="9950000">Бастия</option>
+            <option value="19050000">Валансьен</option>
+            <option value="20450000">Гавр</option>
+            <option value="17450000">Генгам</option>
+            <option value="13500000">Гренобль</option>
+            <option value="18450000">Дижон</option>           
+            <option value="10350000">Дюнкерк</option>
+            <option value="20150000">Кан</option>
+            <option value="14500000">Кевийи</option>
+            <option value="18750000">Нанси</option>
+            <option value="31050000">Ним</option>
+            <option value="15700000">Ньор</option>
+            <option value="18950000">Осер</option>
+            <option value="11750000">Родез</option>
+            <option value="18550000">Сошо</option>
+            <option value="27200000">Тулуза</option>
+            <option value="21000000">ФК Париж</option>
+            <option value="15500000">ФК По</option>        
+            </select>
+
+            <p class="container__choise-title container__choise-title_modnone-Primeira">*Выберите команду хозяев</p>
+            <select id="selectvalue" name="selectNameHomePrimeira" class="container__choise-input container__choise-input_select container__selectNameHome-Primeira">
+            <option selected value="0">Выберите</option>
+            <option value="14200000">Арока</option>
+            <option value="15130000">Белененсеш</option>
+            <option value="270500000">Бенфика</option>
+            <option value="22600000">Боавишта</option>
+            <option value="103800000">Брага</option>
+            <option value="14950000">Визела</option>
+            <option value="41950000">Виктория Гимараэш</option>
+            <option value="15600000">Жил Висенте</option>           
+            <option value="14450000">Маритиму</option>
+            <option value="14750000">Морейренсе</option>
+            <option value="18100000">Пасуш де Ферейра</option>
+            <option value="24880000">Портимоненсе</option>
+            <option value="225300000">Порту</option>
+            <option value="18430000">Санта Клара</option>
+            <option value="251700000">Спортинг</option>
+            <option value="20950000">Тондела</option>
+            <option value="46250000">Фамаликан</option>
+            <option value="25450000">Эшторил Прая</option>      
+            </select>
+
+            
+           
+
+            <p class="container__choise-title">*Кол-во забитых&nbsp;голов команды в последних 5 домашних матчах</p>
+            <input id="homeScored" name="homeScored" type="number" class="container__choise-input" placeholder="Ввести">
+            <p class="container__choise-title">*Кол-во пропущенных голов&nbsp;команды&nbsp;в последних 5 домашних матчах</p>
+            <input id="homeMissed" name="homeMissed" type="number" class="container__choise-input" placeholder="Ввести">
+            <p class="container__choise-title">*Кол-во отсутствующих ключевых&nbsp;игроков атакующей линии</p>
+            <select name="selectAttackHome" id="selectvalue" class="container__choise-input container__choise-input_select">
+            <option selected value="0">Выберите</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            </select>
+
+            <p class="container__choise-title">*Кол-во отсутствующих ключевых игроков линии защиты</p>
+            <select name="selectDefHome" id="selectvalue" class="container__choise-input container__choise-input_select">
+            <option selected value="0">Выберите</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            </select>
+
+            <!-- <p class="container__choise-title">*Класс команды</p>
+            <select name="teamClassHome" id="selectvalue" class="container__choise-input container__choise-input_select">
+            <option selected value="1">Выберите</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            </select> -->
+        </div>
+
+        </div>
+
+      </div>
+      <div class="container__right-section">
+        <h2 class="container__title">AWAY</h2>
+        <div class="container__right-box">
+          <div class="container__right-choice">
+
+            <p class="container__choise-title container__choise-title-away">*Выберите Лигу</p>
+            <select name="selectLeagueAway" id="selectvalue" class="container__choise-input container__choise-input_select leagueAway">
+              <option selected value="0">Выберите</option>
+              <optgroup label="Англия">
+                <option value="1">АПЛ</option>
+                <option value="2">Чемпионшип</option>
+              </optgroup>
+              <optgroup label="Германия">
+                <option value="3">Бундеслига</option>
+                <option value="4">2-я Бундеслига</option>
+              </optgroup>
+              <optgroup label="Испания">
+                <option value="5">Ла Лига</option>
+                <option value="6">2-я Ла Лига</option>
+              </optgroup>
+              <optgroup label="Италия">
+                <option value="7">Серия А</option>
+                <option value="8">Серия В</option>
+              </optgroup>
+              <optgroup label="Франция">
+                <option value="9">Лига 1</option>
+                <option value="10">Лига 2</option>
+              </optgroup>
+              <optgroup label="Португалия">
+                <option value="11">Примейра</option>
+              </optgroup>
+              </select>
+            
+            <p class="container__choise-title container__choise-title_modnone-apl-away container__choise-title-away">*Выберите команду гостей</p>
+            <select id="selectvalue" name="selectNameAway" class="container__choise-input container__choise-input_select container__selectNameAway">
+            <option selected value="0">Выберите</option>
+            <option value="511000000" class="Arsenal-Away">Арсенал</option>
+            <option value="426500000">Астон Вилла</option>
+            <option value="145000000">Бёрнли</option>
+            <option value="239900000">Брайтон</option>
+            <option value="218900000">Брентфорд</option>
+            <option value="350750000">Вест Хэм</option>
+            <option value="338500000">Вулверхэмптон</option>
+            <option value="239950000">Кристалл Пэлас</option>
+            <option value="513800000">Лестер</option>
+            <option value="889000000" class="Liverpool-Away">Ливерпуль</option>
+            <option value="265000000">Лидс</option>
+            <option value="991300000">Ман Сити</option>
+            <option value="790250000">Ман Юнайтед</option>
+            <option value="155550000">Норвич</option>
+            <option value="278400000">Ньюкасл</option>
+            <option value="246750000">Саутгемптон</option>
+            <option value="580250000">Тоттенхэм</option>
+            <option value="143600000">Уотфорд</option>
+            <option value="883000000">Челси</option>
+            <option value="463750000">Эвертон</option>
+            </select>
+
+            <p class="container__choise-title container__choise-title_modnone_cship-away container__choise-title-away">*Выберите команду гостей</p>
+            <select id="selectvalue" name="selectNameChipAway" class="container__choise-input container__choise-input_select container__selectName_Cship-away">
+              <option selected value="0">Выберите</option>
+              <option value="28550000">Барнсли</option>
+              <option value="36300000">Бирмингем</option>
+              <option value="47800000">Блэкберн</option>
+              <option value="13050000">Блэкпул</option>
+              <option value="169600000">Борнмут</option>
+              <option value="33900000">Бристоль</option>
+              <option value="86550000">Вест Бромвич</option>
+              <option value="33600000">Дерби Каунти</option>
+              <option value="31600000">Кардифф</option>
+              <option value="19900000">Ковентри</option>
+              <option value="38950000">Куинз Парк Р.</option>
+              <option value="20200000">Лутон Таун</option>
+              <option value="54400000">Мидлсбро</option>
+              <option value="39600000">Миллуолл</option>
+              <option value="58200000">Ноттингем Форест</option>
+              <option value="11550000">Питерборо</option>
+              <option value="34830000">Престон</option>
+              <option value="37100000">Рединг</option>
+              <option value="58600000">Сток Сити</option>
+              <option value="38950000">Суонси</option>
+              <option value="147000000">Фулхэм</option>
+              <option value="37650000">Хаддерсфилд</option>
+              <option value="21200000">Халл Сити</option>
+              <option value="94100000">Шеффилд Юнайтед</option>
+              </select>
+
+              <p class="container__choise-title container__choise-title_modnone_bundesliga-away container__choise-title-away">*Выберите команду гостей</p>
+            <select id="selectvalue" name="selectNameBundesligaAway" class="container__choise-input container__choise-input_select container__selectName_Bundesliga-away">
+              <option selected value="0">Выберите</option>
+              <option value="199800000">Айнтрахт</option>
+              <option value="55750000">Арминия</option>
+              <option value="98800000">Аугсбург</option>
+              <option value="815750000">Бавария Мюнхен</option>
+              <option value="417450000">Байер 04</option>
+              <option value="576300000">Боруссия Дортмунд</option>
+              <option value="237300000">Боруссия Мёнхенг.</option>
+              <option value="41850000">Бохум</option>
+              <option value="18530000">Вольфсбург</option>
+              <option value="106430000">Герта Берлин</option>
+              <option value="29800000">Гройтер Фюрт</option>
+              <option value="75510000">Кёльн</option>
+              <option value="122050000">Майнц 05</option>
+              <option value="454000000">РБ Лейпциг</option>
+              <option value="71600000">Унион Берлин</option>
+              <option value="146750000">Фрайбург</option>
+              <option value="197450000">Хоффенхайм</option>
+              <option value="182100000">Штутгарт</option>
+            </select>
+
+            <p class="container__choise-title container__choise-title_modnone_bundesligaTwo-away container__choise-title-away">*Выберите команду гостей</p>
+            <select id="selectvalue" name="selectNameBundesligaTwoAway" class="container__choise-input container__choise-input_select container__selectName_BundesligaTwo-away">
+              <option selected value="0">Выберите</option>
+              <option value="39350000">Вердер</option>
+              <option value="36550000">Гамбург</option>
+              <option value="13100000">Ганза Росток</option>
+              <option value="20880000">Ганновер 96</option>
+              <option value="17080000">Дармштадт 98</option>
+              <option value="13930000">Динамо Дрезден</option>
+              <option value="13480000">Зандхаузен</option>
+              <option value="12850000">Ингольштадт</option>
+              <option value="15030000">Карлсруэ</option>
+              <option value="25480000">Нюрнберг</option>
+              <option value="17200000">Падеборн 07</option>
+              <option value="25100000">Санкт-Паули</option>
+              <option value="25500000">Фортуна Дюсс.</option>
+              <option value="17700000">Хайденхайм</option>
+              <option value="16200000">Хольштайн Киль</option>
+              <option value="32750000">Шальке 04</option>
+              <option value="11080000">Эрцгебирге Ауэ</option>
+              <option value="16880000">Ян Регенсбург</option>
+            </select>
+
+            <p class="container__choise-title container__choise-title_modnone_LaLiga-away container__choise-title-away">*Выберите команду гостей</p>
+            <select id="selectvalue" name="selectNameLaLigaAway" class="container__choise-input container__choise-input_select container__selectName_LaLiga-away">
+            <option selected value="0">Выберите</option>
+            <option value="190600000">Атлетик Бильбао</option>
+            <option value="66700000">Алавес</option>
+            <option value="646500000">Атлетико Мадрид</option>
+            <option value="650500000">Барселона</option>
+            <option value="230100000">Бетис</option>
+            <option value="298300000">Валенсия</option>
+            <option value="367000000">Вильяреал</option>
+            <option value="86000000">Гранада</option>           
+            <option value="62150000">Кадис</option>
+            <option value="82200000">Леванте</option>
+            <option value="74500000">Мальорка</option>
+            <option value="87600000">Осасуна</option>
+            <option value="57300000">Райо Вальекано</option>
+            <option value="780000000">Реал Мадрид</option>
+            <option value="395000000">Реал Сосьедад</option>
+            <option value="424900000">Севилья</option>
+            <option value="124700000">Сельта</option>
+            <option value="150300000">Хетафе</option>
+            <option value="48500000">Эльче</option>
+            <option value="112500000">Эспаньол</option>
+            </select>
+
+            <p class="container__choise-title container__choise-title_modnone_LaLigaTwo-away container__choise-title-away">*Выберите команду гостей</p>
+            <select id="selectvalue" name="selectNameLaLigaTwoAway" class="container__choise-input container__choise-input_select container__selectName_LaLigaTwo-away">
+              <option selected value="0">Выберите</option>
+            <option value="6800000">Алькорон</option>
+            <option value="57400000">Альмерия</option>
+            <option value="10250000">Аморебьета</option>
+            <option value="8000000">Бургос</option>
+            <option value="27900000">Жирона</option>
+            <option value="11200000">Ибица</option>
+            <option value="12500000">Картахена</option>
+            <option value="23000000">Лас-Пальмас</option>           
+            <option value="36500000">Леганес</option>
+            <option value="7400000">Луго</option>
+            <option value="23300000">Малага</option>
+            <option value="19000000">Мирандес</option>
+            <option value="14500000">Понферрадина</option>
+            <option value="46800000">Реал Вальядолид</option>
+            <option value="18800000">Реал Овьедо</option>
+            <option value="25000000">Сарагоса</option>
+            <option value="30750000">Реал Сосьедад Б</option>
+            <option value="28350000">Спортинг Хихон</option>
+            <option value="18900000">Тенерифе</option>
+            <option value="29600000">Уэска</option>
+            <option value="14700000">Фуэнлабрада</option>
+            <option value="29800000">Эйбар</option>
+            </select>
+
+            <p class="container__choise-title container__choise-title_modnone_SeriaA-away container__choise-title-away">*Выберите команду гостей</p>
+            <select id="selectvalue" name="selectNameSeriaAAway" class="container__choise-input container__choise-input_select container__selectName_SeriaA-away">
+              <option selected value="0">Выберите</option>
+              <option value="379900000">Аталанта</option>
+              <option value="142750000">Болонья</option>
+              <option value="87980000">Венеция</option>
+              <option value="108200000">Дженоа</option>
+              <option value="550900000">Интер Милан</option>
+              <option value="129500000">Кальяри</option>
+              <option value="267450000">Лацио</option>
+              <option value="466600000">Милан</option>           
+              <option value="505850000">Наполи</option>
+              <option value="390650000">Рома</option>
+              <option value="55850000">Салернитана</option>
+              <option value="103300000">Сампдория</option>
+              <option value="205600000">Сассуоло</option>
+              <option value="70000000">Специя</option>
+              <option value="205680000">Торино</option>
+              <option value="103250000">Удинезе</option>
+              <option value="232400000">Фиорентина</option>
+              <option value="116530000">Верона</option>
+              <option value="86600000">Эмполи</option>
+              <option value="566400000">Ювентус</option>        
+              </select>
+
+              <p class="container__choise-title container__choise-title_modnone_SeriaB-away container__choise-title-away">*Выберите команду гостей</p>
+            <select id="selectvalue" name="selectNameSeriaBAway" class="container__choise-input container__choise-input_select container__selectName_SeriaB-away">
+            <option selected value="0">Выберите</option>
+            <option value="10400000">Алессандрия</option>
+            <option value="12550000">Асколи</option>
+            <option value="29980000">Беневенто</option>
+            <option value="36000000">Брешиа</option>
+            <option value="16130000">Виченца</option>
+            <option value="17580000">Козенца</option>
+            <option value="16380000">Комо</option>
+            <option value="24880000">Кремонезе</option>           
+            <option value="20930000">Кротоне</option>
+            <option value="32900000">Лечче</option>
+            <option value="44650000">Монца</option>
+            <option value="57550000">Парма</option>
+            <option value="13800000">Перуджа</option>
+            <option value="33000000">Пиза</option>
+            <option value="8650000">Порденеоне</option>
+            <option value="15500000">Реджина</option>
+            <option value="26430000">СПАЛ</option>
+            <option value="15480000">Тернана</option>
+            <option value="18830000">Фрозиноне</option>
+            <option value="12480000">Читаделла</option>        
+            </select>
+
+            <p class="container__choise-title container__choise-title_modnone_League1-away container__choise-title-away">*Выберите команду гостей</p>
+            <select id="selectvalue" name="selectNameLeague1Away" class="container__choise-input container__choise-input_select container__selectName_League1-away">
+            <option selected value="0">Выберите</option>
+            <option value="61050000">Анже</option>
+            <option value="87850000">Бордо</option>
+            <option value="76850000">Брест</option>
+            <option value="42650000">Клермон</option>
+            <option value="113700000">Ланс</option>
+            <option value="239300000">Лилль</option>
+            <option value="316050000">Лион</option>
+            <option value="52800000">Лорьян</option>           
+            <option value="250350000">Марсель</option>
+            <option value="88200000">Метц</option>
+            <option value="352200000">Монако</option>
+            <option value="98550000">Монпелье</option>
+            <option value="89500000">Нант</option>
+            <option value="237950000">Ницца</option>
+            <option value="909550000">ПСЖ</option>
+            <option value="216900000">Ренн</option>
+            <option value="106900000">Сент-Этьен</option>
+            <option value="99000000">Реймс</option>
+            <option value="95400000">Страсбург</option>
+            <option value="58750000">Труа</option>        
+            </select>
+
+            <p class="container__choise-title container__choise-title_modnone_League2-away container__choise-title-away">*Выберите команду гостей</p>
+            <select id="selectvalue" name="selectNameLeague2Away" class="container__choise-input container__choise-input_select container__selectName_League2-away">
+              <option selected value="0">Выберите</option>
+              <option value="23300000">Амьен</option>
+              <option value="17550000">Аяччо</option>
+              <option value="9950000">Бастия</option>
+              <option value="19050000">Валансьен</option>
+              <option value="20450000">Гавр</option>
+              <option value="17450000">Генгам</option>
+              <option value="13500000">Гренобль</option>
+              <option value="18450000">Дижон</option>           
+              <option value="10350000">Дюнкерк</option>
+              <option value="20150000">Кан</option>
+              <option value="14500000">Кевийи</option>
+              <option value="18750000">Нанси</option>
+              <option value="31050000">Ним</option>
+              <option value="15700000">Ньор</option>
+              <option value="18950000">Осер</option>
+              <option value="11750000">Родез</option>
+              <option value="18550000">Сошо</option>
+              <option value="27200000">Тулуза</option>
+              <option value="21000000">ФК Париж</option>
+              <option value="15500000">ФК По</option>        
+              </select>
+
+              <p class="container__choise-title container__choise-title_modnone_Primeira-away container__choise-title-away">*Выберите команду гостей</p>
+            <select id="selectvalue" name="selectNamePrimeiraAway" class="container__choise-input container__choise-input_select container__selectName_Primeira-away">
+              <option selected value="0">Выберите</option>
+              <option value="14200000">Арока</option>
+              <option value="15130000">Белененсеш</option>
+              <option value="270500000">Бенфика</option>
+              <option value="22600000">Боавишта</option>
+              <option value="103800000">Брага</option>
+              <option value="14950000">Визела</option>
+              <option value="41950000">Виктория Гимараэш</option>
+              <option value="15600000">Жил Висенте</option>           
+              <option value="14450000">Маритиму</option>
+              <option value="14750000">Морейренсе</option>
+              <option value="18100000">Пасуш де Ферейра</option>
+              <option value="24880000">Портимоненсе</option>
+              <option value="225300000">Порту</option>
+              <option value="18430000">Санта Клара</option>
+              <option value="251700000">Спортинг</option>
+              <option value="20950000">Тондела</option>
+              <option value="46250000">Фамаликан</option>
+              <option value="25450000">Эшторил Прая</option>      
+              </select>
+
+
+            
+
+
+            <p class="container__choise-title container__choise-title_mod">*Кол-во забитых&nbsp;голов команды в последних 5 выездных матчах</p>
+            <input id="awayScored" name="awayScored" type="number" class="container__choise-input" placeholder="Ввести">
+            <p class="container__choise-title container__choise-title_mod">*Кол-во пропущенных голов&nbsp;команды&nbsp;в последних 5 выездных матчах</p>
+            <input id="awayMissed" name="awayMissed" type="number" class="container__choise-input" placeholder="Ввести">
+            <p class="container__choise-title container__choise-title_mod">*Кол-во отсутствующих ключевых&nbsp;игроков атакующей линии</p>
+            <select name="selectAttackAway" id="selectvalue" class="container__choise-input container__choise-input_select">
+            <option selected value="0">Выберите</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            </select>
+
+            <p class="container__choise-title container__choise-title_mod">*Кол-во отсутствующих ключевых игроков линии защиты</p>
+            <select name="selectDefAway" id="selectvalue" class="container__choise-input container__choise-input_select">
+            <option selected value="0">Выберите</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            </select>
+
+            <!-- <p class="container__choise-title container__choise-title_mod">*Класс команды</p>
+            <select name="teamClassAway" id="selectvalue" class="container__choise-input container__choise-input_select">
+            <option selected value="1">Выберите</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            </select> -->
+          </div>
+          <!-- <div class="container__market-menu">
+            
+            <iframe class="container__video" src="https://www.youtube.com/embed/HW9gZ-LyAJI" title="YouTube video player" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+          </div> -->
+        </div>
+    </div>
+  </form>
+    
+    <section class="line">
+      <button type="button" class="math-button" ><a href="#scroll" class="math-button_mod">Получить результаты</a></button>
+
+      <div class="line__teamVs">
+      <p class="line__teamVs-home"></p>
+      <img class="line__teamVs-img img-home">
+      <p class="line__teamVs-home line__teamVs-vs"></p>
+      <img class="line__teamVs-img img-away">
+      <p class="line__teamVs-home line__teamVs-away"></p>  
+      </div>
+
+      <div class="line__teamVs_mod">
+        <p class="line__teamVs-home_mod"></p>
+        <p class="line__teamVs-home_mod line__teamVs-vs_mod"></p>
+        <p class="line__teamVs-away_mod"></p>
+      </div>
+
+      <div class="line__logo-result">
+        <img class="img-home_mod">
+        <div class="line__result-box-text line__result-box-text_mod">
+          <a class="line__result-text line__result-text_mod" name="scroll">*Самый вероятный счёт</a>
+          <div class="line__result-text-box line__result-text-box_mod"> 
+          <p class="line__result-goalscore"></p>      
+         </div>
+         </div>
+         <img class="img-away_mod">
+      </div>
+
+      <div class="line__win-draw-win">
+        <div class="line__win-box">
+          <p class="line__win-title">WIN</p>
+          <div class="line__win-title-box">
+            <div class="line__win-persent-box">
+          <p class="line__win-persent win-persent"></p>
+          </div>
+          <a class="line__win-persent line__win-persent_mod win-profit-home" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+          </div>
+        </div>
+        <div class="line__win-box">
+          <p class="line__win-title">DRAW</p>
+          <div class="line__win-title-box">
+            <div class="line__win-persent-box">
+          <p class="line__win-persent draw-persent"></p>
+          </div>
+          <a class="line__win-persent line__win-persent_mod win-profit-draw" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+        </div>
+        </div>
+        <div class="line__win-box">
+          <p class="line__win-title line__win-title_mod">WIN</p>
+          <div class="line__win-title-box">
+            <div class="line__win-persent-box">
+          <p class="line__win-persent awayWin-persent"></p>
+          </div>
+          <a class="line__win-persent line__win-persent_mod win-profit-away" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="line__content">
+        <div class="line__result-box">
+          <div class="line__result-text-left-box">
+           
+            <div class="line__box-line">
+              <p class="line__box-line-text">Тотал больше (2.5)</p>
+            
+  
+              <div class="line__box-line-box">
+                <div class="line__persent-exel"> 
+                <p class="line__box-line-text totalMore-twoFive_mod-title"></p>
+                </div>
+                <div class="line__persent-exel"> 
+                <a class="line__box-line-text totalMore-twoFive-profit_mod-title line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="line__box-line_mod">
+              <p class="line__box-line-text">Тотал меньше (2.5)</p>
+            
+  
+              <div class="line__box-line-box">
+                <div class="line__persent-exel"> 
+                <p class="line__box-line-text totalLess-twoFive_mod-title"></p>
+                </div>
+                <div class="line__persent-exel"> 
+                <a class="line__box-line-text totalLess-twoFive-profit_mod-title line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="line__result-box-text">
+          <p class="line__result-text">*Самый вероятный счёт</p>
+          <div class="line__result-text-box"> 
+          <p class="line__result-goalscore line__result-goalscore_mod"></p>      
+         </div>
+         </div>
+         <div class="line__result-text-left-box">
+          <div class="line__box-line line__box-line_noborder">
+            <p class="line__box-line-text">Обе забьют</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text allScored_mod-title"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text allScored-profit_mod-title line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="line__box-line_mod">
+            <p class="line__box-line-text">Хотя бы одна не забьёт</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text notAllScored_mod-title"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text notAllScored-profit_mod-title line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+              
+        </div>
+
+        </div>
+      </div>
+
+      <p class="line__all-line">Показать остальную роспись...</p>
+      
+      <div class="line__persent-container" id="elem">
+        <div class="line__persent-box">
+          <p class="line__paragraph">Результат матча</p>
+
+          
+            
+            <div class="line__box-line-title">
+              <p class="line__box-line-text_border">Событие</p>
+              <p class="line__box-line-text_border">Вероятность</p>
+              <p class="line__box-line-text_border">Мин. коэфф. для положительного ROI</p>
+            </div>
+
+         
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">Победа HOME</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text line-winHome-persent"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a href="https://pmaff.com/?serial=61280826&creative_id=1147&anid=" target="_blank" class="line__box-line-text profit-kef line__box-line-text_link"></a>
+              </div>
+            </div>
+          </div>
+          
+          
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">Ничья</p>
+         
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text draw"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a href="https://pmaff.com/?serial=61280826&creative_id=1147&anid=" target="_blank" class="line__box-line-text draw-profit line__box-line-text_link"></a>
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">HOME не проиграет</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text homeX"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a href="https://pmaff.com/?serial=61280826&creative_id=1147&anid=" target="_blank" class="line__box-line-text homeX-profit line__box-line-text_link"></a>
+              </div>
+            </div>
+          </div>
+          
+
+          <!-- <div class="line__box-line">
+            <p class="line__box-line-text">HOME с форой (+1)</p>
+            <div class="line__box-line-box">
+              <p class="line__box-line-text home-plusOne"></p>
+              <p class="line__box-line-text home-plusOne-profit"></p>
+            </div>
+          </div> -->
+
+          <div class="line__box-line line__box-line">
+            <p class="line__paragraph line__paragraph_par">Форы</p>
+          </div>
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">HOME с форой (0)</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text homeNull"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text homeNull-profit line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">HOME с форой (+1.5)</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text home-plusOneFive"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text home-plusOneFive-profit line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+          
+
+          <!-- <div class="line__box-line">
+            <p class="line__box-line-text">HOME с форой (+2)</p>
+            <div class="line__box-line-box">
+              <p class="line__box-line-text home-plusTwo"></p>
+              <p class="line__box-line-text home-plusTwo-profit"></p>
+            </div>
+          </div> -->
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">HOME с форой (+2.5)</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text home-plusTwoFive"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text home-plusTwoFive-profit line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+          
+
+          <!-- <div class="line__box-line">
+            <p class="line__box-line-text">HOME с форой (-1)</p>
+            <div class="line__box-line-box">
+              <p class="line__box-line-text home-minusOne"></p>
+              <p class="line__box-line-text home-minusOne-profit"></p>
+            </div>
+          </div> -->
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">HOME с форой (-1.5)</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text home-minusOneFive"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text home-minusOneFive-profit line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+          
+
+           <!-- <div class="line__box-line">
+            <p class="line__box-line-text">HOME с форой (-2)</p>
+            <div class="line__box-line-box">
+              <p class="line__box-line-text home-minusTwo"></p>
+              <p class="line__box-line-text home-minusTwo-profit"></p>
+            </div>
+          </div> -->
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">HOME с форой (-2.5)</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text home-minusTwoFive"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text home-minusTwoFive-profit line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="line__box-line line__box-line">
+            <p class="line__paragraph line__paragraph_par">Тоталы</p>
+          </div>
+          
+          
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">Тотал больше (0.5)</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text totalMore-nullFive"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text totalMore-nullFive-profit line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+         
+
+          <!-- <div class="line__box-line">
+            <p class="line__box-line-text">Тотал больше (1)</p>
+            <div class="line__box-line-box">
+              <p class="line__box-line-text totalMore-one"></p>
+              <p class="line__box-line-text totalMore-one-profit"></p>
+            </div>
+          </div> -->
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">Тотал больше (1.5)</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text totalMore-oneFive"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text totalMore-oneFive-profit line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+          
+
+          <!-- <div class="line__box-line">
+            <p class="line__box-line-text">Тотал больше (2)</p>
+            <div class="line__box-line-box">
+              <p class="line__box-line-text totalMore-two"></p>
+              <p class="line__box-line-text totalMore-two-profit"></p>
+            </div>
+          </div> -->
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">Тотал больше (2.5)</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text totalMore-twoFive"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text totalMore-twoFive-profit line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+          
+
+          <!-- <div class="line__box-line">
+            <p class="line__box-line-text">Тотал больше (3)</p>
+            <div class="line__box-line-box">
+              <p class="line__box-line-text totalMore-three"></p>
+              <p class="line__box-line-text totalMore-three-profit"></p>
+            </div>
+          </div> -->
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">Тотал больше (3.5)</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text totalMore-threeFive"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text totalMore-threeFive-profit line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+          
+
+          <!-- <div class="line__box-line">
+            <p class="line__box-line-text">Тотал больше (4)</p>
+            <div class="line__box-line-box">
+              <p class="line__box-line-text totalMore-four"></p>
+              <p class="line__box-line-text totalMOre-four-profit"></p>
+            </div>
+          </div> -->
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">Тотал больше (4.5)</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text totalMore-fourFive"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text totalMore-fourFive-profit line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+          
+
+          <!-- <div class="line__box-line">
+            <p class="line__box-line-text">Тотал больше (5)</p>
+            <div class="line__box-line-box">
+              <p class="line__box-line-text totalMore-five"></p>
+              <p class="line__box-line-text totalMore-five-profit"></p>
+            </div>
+          </div> -->
+
+          <div class="line__box-line line__box-line">
+            <p class="line__paragraph line__paragraph_par">Остальное</p>
+          </div>
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">Обе забьют</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text allScored"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text allScored-profit line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+        
+
+          <div class="line__box-line line__box-line">
+            <p class="line__paragraph line__paragraph_par">Точный счёт</p>
+          </div>
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">1 : 0</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text home-oneNull"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text home-oneNull-profit line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="line__box-line line__box-line_oneOne-show">
+            <p class="line__box-line-text">1 : 1</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text home-oneOne"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text home-oneOne-profit line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="line__box-line line__box-line_twoNull-show">
+            <p class="line__box-line-text">2 : 0</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text home-twoNull"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text home-twoNull-profit line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="line__box-line line__box-line_twoOne-show">
+            <p class="line__box-line-text">2 : 1</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text home-twoOne"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text home-twoOne-profit line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="line__box-line line__box-line_threeNull-show">
+            <p class="line__box-line-text">3 : 0</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text home-threeNull"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text home-threeNull-profit line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="line__box-line line__box-line_fourNull-show">
+            <p class="line__box-line-text">4 : 0</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text home-fourNull"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text home-fourNull-profit line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+
+      
+   
+
+        </div>       
+
+        <div class="line__persent-box">
+          <p class="line__paragraph">Результат матча</p>
+
+         
+  
+            <div class="line__box-line-title">
+              <p class="line__box-line-text_border">Событие</p>
+              <p class="line__box-line-text_border">Вероятность</p>
+              <p class="line__box-line-text_border">Мин. коэфф. для положительного ROI</p>
+            </div>
+          
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">Победа AWAY</p>
+        
+            <div class="line__box-line-box">
+              <div class="line__persent-exel">
+              <p class="line__box-line-text away-win"></p>
+              </div>
+              <div class="line__persent-exel">          
+              <a class="line__box-line-text away-win-profit line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">Ничьи не будет</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text notDraw"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text notDraw-profit line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">AWAY не проиграет</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text awayX"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text awayX-profit line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+          
+
+          <!-- <div class="line__box-line">
+            <p class="line__box-line-text">Away с форой (0)</p>
+            <div class="line__box-line-box">
+              <p class="line__box-line-text awayNull"></p>
+              <p class="line__box-line-text awayNull-profit"></p>
+            </div>
+          </div> -->
+
+          <!-- <div class="line__box-line">
+            <p class="line__box-line-text">AWAY с форой (+1)</p>
+            <div class="line__box-line-box">
+              <p class="line__box-line-text away-plusOne"></p>
+              <p class="line__box-line-text away-plusOne-profit"></p>
+            </div>
+          </div> -->
+
+          <div class="line__box-line line__box-line">
+            <p class="line__paragraph line__paragraph_par">Форы</p>
+          </div>
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">AWAY с форой (0)</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text awayNull"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text awayNull-profit line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">AWAY с форой (+1.5)</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text away-plusOneFive"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text away-plusOneFive-profit line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+          
+
+          <!-- <div class="line__box-line">
+            <p class="line__box-line-text">AWAY с форой (+2)</p>
+            <div class="line__box-line-box">
+              <p class="line__box-line-text away-plusTwo"></p>
+              <p class="line__box-line-text away-plusTwo-profit"></p>
+            </div>
+          </div> -->
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">AWAY с форой (+2.5)</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text away-plusTwoFive"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text away-plusTwoFive-profit line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+          
+
+          <!-- <div class="line__box-line">
+            <p class="line__box-line-text">AWAY с форой (-1)</p>
+            <div class="line__box-line-box">
+              <p class="line__box-line-text away-minusOne"></p>
+              <p class="line__box-line-text away-minusOne-profit"></p>
+            </div>
+          </div> -->
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">AWAY с форой (-1.5)</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text away-minusOneFive"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text away-minusOneFive-profit line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+          
+
+          <!-- <div class="line__box-line">
+            <p class="line__box-line-text">AWAY с форой (-2)</p>
+            <div class="line__box-line-box">
+              <p class="line__box-line-text away-minusTwo"></p>
+              <p class="line__box-line-text away-minusTwo-profit"></p>
+            </div>
+          </div> -->
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">AWAY с форой (-2.5)</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text away-minusTwoFive"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text away-minusTwoFive-profit line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="line__box-line line__box-line">
+            <p class="line__paragraph line__paragraph_par">Тоталы</p>
+          </div>
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">Тотал меньше (0.5)</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text totalLess-nullFive"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text totalLess-nullFive-profit line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+        
+
+          <!-- <div class="line__box-line">
+            <p class="line__box-line-text">Тотал меньше (1)</p>
+            <div class="line__box-line-box">
+              <p class="line__box-line-text totalLess-one"></p>
+              <p class="line__box-line-text totalLess-one-profit"></p>
+            </div>
+          </div> -->
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">Тотал меньше (1.5)</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text totalLess-oneFive"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text totalLess-oneFive-profit line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+          
+
+          <!-- <div class="line__box-line">
+            <p class="line__box-line-text">Тотал меньше (2)</p>
+            <div class="line__box-line-box">
+              <p class="line__box-line-text totalLess-two"></p>
+              <p class="line__box-line-text totalLess-two-profit"></p>
+            </div>
+          </div> -->
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">Тотал меньше (2.5)</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text totalLess-twoFive"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text totalLess-twoFive-profit line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+          
+
+          <!-- <div class="line__box-line">
+            <p class="line__box-line-text">Тотал меньше (3)</p>
+            <div class="line__box-line-box">
+              <p class="line__box-line-text totalLess-three"></p>
+              <p class="line__box-line-text totalLess-three-profit"></p>
+            </div>
+          </div> -->
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">Тотал меньше (3.5)</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text totalLess-threeFive"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text totalLess-threeFive-profit line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+          
+
+          <!-- <div class="line__box-line">
+            <p class="line__box-line-text">Тотал меньше (4)</p>
+            <div class="line__box-line-box">
+              <p class="line__box-line-text totalLess-four"></p>
+              <p class="line__box-line-text totalLess-four-profit"></p>
+            </div>
+          </div> -->
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">Тотал меньше (4.5)</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text totalLess-fourFive"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text totalLess-fourFive-profit line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+          
+
+          <!-- <div class="line__box-line">
+            <p class="line__box-line-text">Тотал меньше (5)</p>
+            <div class="line__box-line-box">
+              <p class="line__box-line-text totalLess-five"></p>
+              <p class="line__box-line-text totalLess-five-profit"></p>
+            </div>
+          </div> -->
+
+          <div class="line__box-line line__box-line">
+            <p class="line__paragraph line__paragraph_par">Остальное</p>
+          </div>
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">Хотя бы одна не забьёт</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text notAllScored"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text notAllScored-profit line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="line__box-line line__box-line">
+            <p class="line__paragraph line__paragraph_par">Точный Счет</p>
+          </div>
+
+          <div class="line__box-line line__box-line_nullNull-show">
+            <p class="line__box-line-text">0 : 0</p>
+  
+          <div class="line__box-line-box">
+            <div class="line__persent-exel"> 
+            <p class="line__box-line-text away-nullNull"></p>
+            </div>
+            <div class="line__persent-exel"> 
+            <a class="line__box-line-text away-nullNull-profit line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+            </div>
+          </div>
+        </div>
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">0 : 1</p>
+
+          <div class="line__box-line-box">
+            <div class="line__persent-exel"> 
+            <p class="line__box-line-text away-nullOne"></p>
+            </div>
+            <div class="line__persent-exel"> 
+            <a class="line__box-line-text away-nullOne-profit line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+            </div>
+          </div>
+        </div>
+
+        
+          
+
+
+        </div>
+      </div>
+
+      <div class="line__persent-container_mod" id="mobile">
+        <div class="line__persent-box_mod">
+          <p class="line__paragraph">Результат матча</p>
+
+          
+            
+            <div class="line__box-line-title">
+              <p class="line__box-line-text_border">Событие</p>
+              <p class="line__box-line-text_border">Вероятность</p>
+              <p class="line__box-line-text_border">Мин. коэфф. для положительного ROI</p>
+            </div>
+
+            <!-- <div class="line__box-line line__box-line">
+              <p class="line__paragraph line__paragraph_mod">Исходы</p>
+            </div> -->
+
+         
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">Победа HOME</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text line-winHome-persent_mod"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a href="#" class="line__box-line-text profit-kef_mod line__box-line-text_link"></a>
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">Победа AWAY</p>
+        
+            <div class="line__box-line-box">
+              <div class="line__persent-exel">
+              <p class="line__box-line-text away-win_mod"></p>
+              </div>
+              <div class="line__persent-exel">          
+              <a class="line__box-line-text away-win-profit_mod line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">Ничья</p>
+         
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text draw_mod"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a href="#" class="line__box-line-text draw-profit_mod line__box-line-text_link"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">Ничьи не будет</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text notDraw_mod"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text notDraw-profit_mod line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">HOME не проиграет</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text homeX_mod"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a href="#" class="line__box-line-text homeX-profit_mod line__box-line-text_link"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">AWAY не проиграет</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text awayX_mod"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text awayX-profit_mod line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+          
+
+          <!-- <div class="line__box-line">
+            <p class="line__box-line-text">HOME с форой (0)</p>
+            <div class="line__box-line-box">
+              <p class="line__box-line-text homeNull"></p>
+              <p class="line__box-line-text homeNull-profit"></p>
+            </div>
+          </div>  -->
+
+          <!-- <div class="line__box-line">
+            <p class="line__box-line-text">HOME с форой (+1)</p>
+            <div class="line__box-line-box">
+              <p class="line__box-line-text home-plusOne"></p>
+              <p class="line__box-line-text home-plusOne-profit"></p>
+            </div>
+          </div> -->
+
+          <div class="line__box-line line__box-line">
+            <p class="line__paragraph line__paragraph_mod">Форы</p>
+          </div>
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">HOME с форой (+1.5)</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text home-plusOneFive_mod"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text home-plusOneFive-profit_mod line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+          
+
+          <!-- <div class="line__box-line">
+            <p class="line__box-line-text">HOME с форой (+2)</p>
+            <div class="line__box-line-box">
+              <p class="line__box-line-text home-plusTwo"></p>
+              <p class="line__box-line-text home-plusTwo-profit"></p>
+            </div>
+          </div> -->
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">HOME с форой (+2.5)</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text home-plusTwoFive_mod"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text home-plusTwoFive-profit_mod line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+          
+
+          <!-- <div class="line__box-line">
+            <p class="line__box-line-text">HOME с форой (-1)</p>
+            <div class="line__box-line-box">
+              <p class="line__box-line-text home-minusOne"></p>
+              <p class="line__box-line-text home-minusOne-profit"></p>
+            </div>
+          </div> -->
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">HOME с форой (-1.5)</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text home-minusOneFive_mod"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text home-minusOneFive-profit_mod line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+          
+
+           <!-- <div class="line__box-line">
+            <p class="line__box-line-text">HOME с форой (-2)</p>
+            <div class="line__box-line-box">
+              <p class="line__box-line-text home-minusTwo"></p>
+              <p class="line__box-line-text home-minusTwo-profit"></p>
+            </div>
+          </div> -->
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">HOME с форой (-2.5)</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text home-minusTwoFive_mod"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text home-minusTwoFive-profit_mod line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">AWAY с форой (+1.5)</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text away-plusOneFive_mod"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text away-plusOneFive-profit_mod line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">AWAY с форой (+2.5)</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text away-plusTwoFive_mod"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text away-plusTwoFive-profit_mod line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">AWAY с форой (-1.5)</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text away-minusOneFive_mod"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text away-minusOneFive-profit_mod line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">AWAY с форой (-2.5)</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text away-minusTwoFive_mod"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text away-minusTwoFive-profit_mod line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="line__box-line line__box-line">
+            <p class="line__paragraph line__paragraph_mod">Тоталы</p>
+          </div>
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">Тотал больше (0.5)</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text totalMore-nullFive_mod"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text totalMore-nullFive-profit_mod line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">Тотал меньше (0.5)</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text totalLess-nullFive_mod"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text totalLess-nullFive-profit_mod line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+        
+         
+
+          <!-- <div class="line__box-line">
+            <p class="line__box-line-text">Тотал больше (1)</p>
+            <div class="line__box-line-box">
+              <p class="line__box-line-text totalMore-one"></p>
+              <p class="line__box-line-text totalMore-one-profit"></p>
+            </div>
+          </div> -->
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">Тотал больше (1.5)</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text totalMore-oneFive_mod"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text totalMore-oneFive-profit_mod line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">Тотал меньше (1.5)</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text totalLess-oneFive_mod"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text totalLess-oneFive-profit_mod line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+          
+
+          <!-- <div class="line__box-line">
+            <p class="line__box-line-text">Тотал больше (2)</p>
+            <div class="line__box-line-box">
+              <p class="line__box-line-text totalMore-two"></p>
+              <p class="line__box-line-text totalMore-two-profit"></p>
+            </div>
+          </div> -->
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">Тотал больше (2.5)</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text totalMore-twoFive_mod"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text totalMore-twoFive-profit_mod line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">Тотал меньше (2.5)</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text totalLess-twoFive_mod"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text totalLess-twoFive-profit_mod line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+          
+          
+
+          <!-- <div class="line__box-line">
+            <p class="line__box-line-text">Тотал больше (3)</p>
+            <div class="line__box-line-box">
+              <p class="line__box-line-text totalMore-three"></p>
+              <p class="line__box-line-text totalMore-three-profit"></p>
+            </div>
+          </div> -->
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">Тотал больше (3.5)</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text totalMore-threeFive_mod"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text totalMore-threeFive-profit_mod line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">Тотал меньше (3.5)</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text totalLess-threeFive_mod"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text totalLess-threeFive-profit_mod line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+          
+
+          <!-- <div class="line__box-line">
+            <p class="line__box-line-text">Тотал больше (4)</p>
+            <div class="line__box-line-box">
+              <p class="line__box-line-text totalMore-four"></p>
+              <p class="line__box-line-text totalMOre-four-profit"></p>
+            </div>
+          </div> -->
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">Тотал больше (4.5)</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text totalMore-fourFive_mod"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text totalMore-fourFive-profit_mod line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              
+              </div>
+            </div>
+          </div>
+          
+          <div class="line__box-line">
+            <p class="line__box-line-text">Тотал меньше (4.5)</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text totalLess-fourFive_mod"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text totalLess-fourFive-profit_mod line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+          
+
+          <!-- <div class="line__box-line">
+            <p class="line__box-line-text">Тотал больше (5)</p>
+            <div class="line__box-line-box">
+              <p class="line__box-line-text totalMore-five"></p>
+              <p class="line__box-line-text totalMore-five-profit"></p>
+            </div>
+          </div> -->
+
+          <div class="line__box-line line__box-line">
+            <p class="line__paragraph line__paragraph_mod">Остальное</p>
+          </div>
+
+          <div class="line__box-line">
+            <p class="line__box-line-text">Обе забьют</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text allScored_mod"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text allScored-profit_mod line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+        
+          <div class="line__box-line">
+            <p class="line__box-line-text">Хотя бы одна не забьёт</p>
+          
+
+            <div class="line__box-line-box">
+              <div class="line__persent-exel"> 
+              <p class="line__box-line-text notAllScored_mod"></p>
+              </div>
+              <div class="line__persent-exel"> 
+              <a class="line__box-line-text notAllScored-profit_mod line__box-line-text_link" target="_blank" href="https://pmaff.com/?serial=61280826&creative_id=1147&anid="></a>
+              </div>
+            </div>
+          </div>
+
+
+      
+   
+
+        <!-- </div>        -->
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          <!-- <div class="line__box-line">
+            <p class="line__box-line-text">Away с форой (0)</p>
+            <div class="line__box-line-box">
+              <p class="line__box-line-text awayNull"></p>
+              <p class="line__box-line-text awayNull-profit"></p>
+            </div>
+          </div> -->
+
+          <!-- <div class="line__box-line">
+            <p class="line__box-line-text">AWAY с форой (+1)</p>
+            <div class="line__box-line-box">
+              <p class="line__box-line-text away-plusOne"></p>
+              <p class="line__box-line-text away-plusOne-profit"></p>
+            </div>
+          </div> -->
+
+          
+
+          <!-- <div class="line__box-line">
+            <p class="line__box-line-text">AWAY с форой (+2)</p>
+            <div class="line__box-line-box">
+              <p class="line__box-line-text away-plusTwo"></p>
+              <p class="line__box-line-text away-plusTwo-profit"></p>
+            </div>
+          </div> -->
+
+          
+          
+
+          <!-- <div class="line__box-line">
+            <p class="line__box-line-text">AWAY с форой (-1)</p>
+            <div class="line__box-line-box">
+              <p class="line__box-line-text away-minusOne"></p>
+              <p class="line__box-line-text away-minusOne-profit"></p>
+            </div>
+          </div> -->
+
+          
+          
+
+          <!-- <div class="line__box-line">
+            <p class="line__box-line-text">AWAY с форой (-2)</p>
+            <div class="line__box-line-box">
+              <p class="line__box-line-text away-minusTwo"></p>
+              <p class="line__box-line-text away-minusTwo-profit"></p>
+            </div>
+          </div> -->
+
+          
+          
+
+          
+
+          <!-- <div class="line__box-line">
+            <p class="line__box-line-text">Тотал меньше (1)</p>
+            <div class="line__box-line-box">
+              <p class="line__box-line-text totalLess-one"></p>
+              <p class="line__box-line-text totalLess-one-profit"></p>
+            </div>
+          </div> -->
+
+          
+          
+
+          <!-- <div class="line__box-line">
+            <p class="line__box-line-text">Тотал меньше (2)</p>
+            <div class="line__box-line-box">
+              <p class="line__box-line-text totalLess-two"></p>
+              <p class="line__box-line-text totalLess-two-profit"></p>
+            </div>
+          </div> -->
+
+          
+
+          <!-- <div class="line__box-line">
+            <p class="line__box-line-text">Тотал меньше (3)</p>
+            <div class="line__box-line-box">
+              <p class="line__box-line-text totalLess-three"></p>
+              <p class="line__box-line-text totalLess-three-profit"></p>
+            </div>
+          </div> -->
+
+          
+          
+
+          <!-- <div class="line__box-line">
+            <p class="line__box-line-text">Тотал меньше (4)</p>
+            <div class="line__box-line-box">
+              <p class="line__box-line-text totalLess-four"></p>
+              <p class="line__box-line-text totalLess-four-profit"></p>
+            </div>
+          </div> -->
+
+          
+
+          <!-- <div class="line__box-line">
+            <p class="line__box-line-text">Тотал меньше (5)</p>
+            <div class="line__box-line-box">
+              <p class="line__box-line-text totalLess-five"></p>
+              <p class="line__box-line-text totalLess-five-profit"></p>
+            </div>
+          </div> -->
+
+          
+    </section>
+
+    <footer class="footer">
+      <p class="footer__text">© 2022 Math2<span class="header__title-span">Bet</span></p>
+    </footer>
+    
+
+
+
+
+
+
+
+
+    
+      
+    
+    
+    
+    
+    
+    
+    </main>
+    </div>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>

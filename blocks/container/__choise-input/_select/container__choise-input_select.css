@@ -1,0 +1,6 @@
+.container__choise-input_select:hover {
+  cursor: pointer;
+  opacity: 0.3;
+  transition: 0.3s;
+}
+

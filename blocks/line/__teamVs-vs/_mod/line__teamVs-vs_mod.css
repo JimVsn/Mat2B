@@ -1,0 +1,10 @@
+.line__teamVs-vs_mod {
+  width: 10%;
+}
+
+@media screen and (max-width: 390px) {
+  .line__teamVs-vs_mod {
+    font-size: 20px;
+    line-height: 23px;
+  }
+}

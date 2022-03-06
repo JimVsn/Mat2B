@@ -1,0 +1,11 @@
+.container__left-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 700px) {
+  .container__left-box {
+    justify-content: flex-end;
+  }
+}

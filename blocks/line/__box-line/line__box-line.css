@@ -1,0 +1,9 @@
+.line__box-line {
+  width: 100%;
+  border: 1px white solid;
+  border-bottom: none;
+  display: flex;
+  justify-content: space-between;
+  
+}
+

@@ -1,0 +1,19 @@
+.line__result-text-left-box {
+  max-width: 350px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 17px;
+}
+
+@media screen and (max-width: 390px) {
+  .line__result-text-left-box {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .line__result-text-left-box:last-child {
+    margin-top: 0;
+  }
+}

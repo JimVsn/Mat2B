@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Alfa Slab One';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./AlfaSlabOne-Regular.woff2) format("woff2"),
+         url(./AlfaSlabOne-Regular.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'Zantroke';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./Zantroke.woff2) format("woff2"),
+         url(./Zantroke.woff) format("woff");
+}

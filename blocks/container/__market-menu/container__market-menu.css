@@ -1,0 +1,9 @@
+.container__market-menu {
+  width: 45%;
+}
+
+@media screen and (max-width: 450px) {
+  .container__market-menu {
+    width: 90%;
+  }
+}

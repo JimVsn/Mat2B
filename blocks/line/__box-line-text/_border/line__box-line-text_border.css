@@ -1,0 +1,26 @@
+.line__box-line-text_border {
+ color: white;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 15px;
+ line-height: 16px;
+ margin-top: 10px;
+ margin-left: 10px;
+ padding-right: 5px;
+ border-right: 1px white solid;
+}
+
+.line__box-line-text_border:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+@media screen and (max-width: 650px) {
+  .line__box-line-text_border {
+    font-size: 7px;
+    line-height: 8px;
+    margin-top: 3px;
+    margin-left: 3px;
+    padding-right: 2px;
+    margin-bottom: 3px;
+  }
+}

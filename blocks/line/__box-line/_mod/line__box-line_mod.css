@@ -1,0 +1,6 @@
+.line__box-line_mod {
+  width: 100%;
+  border: 1px white solid;
+  display: flex;
+  justify-content: space-between;
+}

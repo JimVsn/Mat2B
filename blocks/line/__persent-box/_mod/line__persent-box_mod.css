@@ -1,0 +1,6 @@
+.line__persent-box_mod {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px white solid;
+  }

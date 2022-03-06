@@ -1,0 +1,10 @@
+@media screen and (min-width: 650px) {
+    .line__result-text-box_mod {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 650px) {
+    .line__result-text-box_mod {
+      display: flex;
+    }
+  }
